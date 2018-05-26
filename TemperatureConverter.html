@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter Devan Ferguson</title>
+	<meta charset="utf-8">
+
+	<script>
+  function ConvertFahr(){
+  var celsius = prompt("What is the number of temperture in Celcius you wish to turn to Fahrenheit?")
+  if(isNaN(parseFloat(celsius))){
+    do{
+      celsius = prompt("You did not enter a number. Please enter a number.");
+    }while(isNaN(parseFloat(celsius)));
+  }
+  var fahrenheit = ((celsius * 9) / 5 + 32);
+  alert(celsius + " is the temperature in celsius given. " + fahrenheit + " is the temperature in fahrenheit");
+}
+
+	</script>
+</head>
+
+<body>
+<h3>Devan Fergusons Temperature Converter!</h3>
+    <table>
+        <tr>
+            <th>Temperature conversion</td>
+        </tr>
+        <tr>
+			<td><input type="button" name="btnConvertFahr" id="ConvertFahr" onclick=ConvertFahr() value="Convert!"></td>
+		</tr>
+    </table>
+</body>
+</html>
